@@ -1,0 +1,1046 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f0b0c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yorqinjon &amp; Sevara">
+<meta property="og:description" content="Nikoh to‘yiga taklifnoma · Приглашение на свадьбу · 14.11.2026, 18:00">
+<meta property="og:image" content="preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 22'%3E%3Cpath fill='%23a9616c' d='M12 21S2.6 15.4 1.2 9.4C.3 5.6 2.6 2 6.4 2c2.4 0 4.3 1.5 5.6 3.4C13.3 3.5 15.2 2 17.6 2c3.8 0 6.1 3.6 5.2 7.4C21.4 15.4 12 21 12 21z'/%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Yorqinjon &amp; Sevara</title>
+<meta name="description" content="Nikoh to‘yiga taklifnoma · 14.11.2026, 18:00 · Zolotaya Dolina, Toshkent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&amp;family=Jost:wght@300;400;500;600&amp;display=swap">
+<style>
+:root {
+  /* Layout: one phone-width column. Cinematic noir opener with a golden lock, pearl "paper" pages with garnet line art, noir countdown band. */
+  --noir: #0f0b0c;
+  --noir-2: #1d1517;
+  --pearl: #faf6f2;
+  --pearl-2: #f1e9e2;
+  --garnet: #8e1d2f;
+  --gold: #c9a46b;
+  --gold-hi: #f0dcae;
+  --ink: #2c2224;
+  --ink-2: #5e5153;
+  --line: rgba(142, 29, 47, .24);
+  --serif: "Cormorant Garamond", "Cormorant", Georgia, "Times New Roman", serif;
+  --sans: "Jost", "Montserrat", "Segoe UI", Roboto, Arial, sans-serif;
+  --ease: cubic-bezier(.2, .7, .2, 1);
+  --grain: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html.is-locked, html.is-locked body { overflow: hidden; }
+body {
+  margin: 0;
+  background: var(--noir);
+  color: var(--ink);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+body:has(#gate:not([hidden])) { overflow: hidden; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+button { font: inherit; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+/* ---------- floating controls ---------- */
+.hud {
+  position: fixed; z-index: 80;
+  top: calc(env(safe-area-inset-top, 0px) + 12px);
+  left: max(14px, env(safe-area-inset-left, 0px));
+  right: max(14px, env(safe-area-inset-right, 0px));
+  display: flex; justify-content: space-between; align-items: center;
+  pointer-events: none;
+}
+.hud > * { pointer-events: auto; }
+.glass {
+  background: rgba(15, 11, 12, .55);
+  border: 1px solid rgba(201, 164, 107, .5);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+}
+.btn-music {
+  width: 44px; height: 44px; border-radius: 50%;
+  display: grid; place-items: center; color: var(--gold-hi); cursor: pointer; padding: 0;
+}
+.btn-music svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; grid-area: 1 / 1; transition: opacity .3s, transform .3s; }
+.eq { grid-area: 1 / 1; display: flex; align-items: flex-end; gap: 3px; height: 16px; opacity: 0; transition: opacity .3s; }
+.eq i { width: 2.5px; height: 100%; background: var(--gold-hi); border-radius: 2px; transform-origin: bottom; transform: scaleY(.25); }
+.music-on .btn-music svg { opacity: 0; transform: scale(.6); }
+.music-on .eq { opacity: 1; }
+.music-on .eq i { animation: eq 1s ease-in-out infinite; }
+.music-on .eq i:nth-child(2) { animation-duration: .8s; animation-delay: -.3s; }
+.music-on .eq i:nth-child(3) { animation-duration: 1.15s; animation-delay: -.6s; }
+.music-on .eq i:nth-child(4) { animation-duration: .9s; animation-delay: -.15s; }
+@keyframes eq { 0%, 100% { transform: scaleY(.25); } 50% { transform: scaleY(1); } }
+.lang { display: flex; padding: 3px; border-radius: 999px; }
+.lang button {
+  border: 0; background: transparent; color: var(--gold-hi); cursor: pointer;
+  font: 500 11px/1 var(--sans); letter-spacing: .14em;
+  padding: 12px 12px 12px 13px; min-width: 44px; border-radius: 999px;
+  transition: background .3s, color .3s;
+}
+.lang button[aria-pressed="true"] { background: var(--gold); color: var(--noir); }
+
+/* ---------- gate (lock screen) ---------- */
+.gate {
+  position: fixed; inset: 0; z-index: 50;
+  display: grid; place-items: center;
+  overflow: hidden; touch-action: none;
+  color: var(--pearl);
+  background: radial-gradient(120% 80% at 50% 40%, #2b1d20 0%, #150f11 55%, #0a0708 100%);
+  padding-block: calc(env(safe-area-inset-top, 0px) + 72px) calc(env(safe-area-inset-bottom, 0px) + 64px);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.gate::after {
+  content: ""; position: absolute; inset: -50%; pointer-events: none;
+  background-image: var(--grain); opacity: .06;
+  animation: grain 1.2s steps(6) infinite;
+}
+@keyframes grain {
+  0% { transform: translate(0, 0); } 20% { transform: translate(-3%, 2%); } 40% { transform: translate(2%, -3%); }
+  60% { transform: translate(-2%, -1%); } 80% { transform: translate(3%, 3%); } 100% { transform: translate(0, 0); }
+}
+.fx { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
+.gate-in { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.gate-date { margin: 0 0 18px; padding-left: .42em; font: 500 11px/1 var(--sans); letter-spacing: .42em; color: var(--gold); opacity: 0; animation: fadeIn 1s .1s forwards; }
+.gate-line { width: 1px; height: clamp(64px, 13vh, 120px); background: linear-gradient(to bottom, rgba(201, 164, 107, 0), var(--gold)); transform-origin: top; transform: scaleY(0); animation: grow 1.4s .25s var(--ease) forwards; }
+.gate-heart { width: 22px; height: 20px; margin: 12px 0 24px; fill: var(--gold-hi); opacity: 0; animation: popIn .7s 1.35s var(--ease) forwards, beat 2.6s 2.2s ease-in-out infinite; }
+.gate-title { margin: 0 0 34px; font: 500 clamp(30px, 9vw, 40px)/1.08 var(--serif); letter-spacing: .08em; text-transform: uppercase; color: var(--pearl); }
+.gate-title span { display: block; opacity: 0; animation: fadeUp 1s var(--ease) forwards; animation-delay: 1.5s; }
+.gate-title span:nth-child(2) { animation-delay: 1.65s; }
+.gate-title span:nth-child(3) { animation-delay: 1.8s; }
+.lock {
+  position: relative; width: 116px; height: 116px; border: 0; border-radius: 50%; padding: 0;
+  display: grid; place-items: center; cursor: pointer; color: var(--gold-hi);
+  background: radial-gradient(circle, rgba(201, 164, 107, .18), rgba(201, 164, 107, .02) 68%);
+  opacity: 0; animation: fadeUp 1s 2.05s var(--ease) forwards;
+}
+.lock::before { content: ""; position: absolute; inset: 13px; border-radius: 50%; border: 1px solid rgba(240, 220, 174, .7); }
+.lock-ring { position: absolute; inset: 0; width: 100%; height: 100%; animation: spin 28s linear infinite; }
+.lock-ring circle { fill: none; stroke: var(--gold); stroke-width: 1; stroke-dasharray: 1.5 5.5; }
+.lock-pulse { position: absolute; inset: 13px; border-radius: 50%; border: 1px solid var(--gold-hi); opacity: 0; animation: pulse 2.6s 2.9s var(--ease) infinite; }
+.lock-ico { position: relative; width: 30px; height: 38px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; transition: filter .4s, transform .4s var(--ease); }
+.lock-ico .shackle { transform-box: fill-box; transform-origin: 100% 100%; transition: transform .5s var(--ease); }
+.lock:hover .lock-ico { transform: scale(1.06); }
+.is-opening .lock-ico { filter: drop-shadow(0 0 10px rgba(240, 220, 174, .95)); transform: scale(1.1); }
+.is-opening .lock-ico .shackle { transform: translateY(-5px) rotate(-38deg); }
+.is-opening .lock-pulse { animation: none; }
+.gate-hint { margin: 22px 0 0; font: 300 13.5px/1.6 var(--sans); letter-spacing: .05em; color: rgba(250, 246, 242, .74); opacity: 0; animation: fadeIn 1.2s 2.5s forwards; }
+.gate-names {
+  position: absolute; z-index: 1; left: 0; right: 0;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 26px);
+  margin: 0; text-align: center; color: var(--gold);
+  font: italic 400 21px/1 var(--serif); letter-spacing: .03em;
+  opacity: 0; animation: fadeIn 1.4s 2.8s forwards;
+}
+.gate-names i { font-style: italic; color: var(--gold-hi); padding: 0 .2em; }
+.iris {
+  position: fixed; z-index: 70; left: 0; top: 0; width: 0; height: 0;
+  border-radius: 50%; pointer-events: none; transform: translate(-50%, -50%);
+  border: 1.5px solid rgba(255, 241, 210, .95);
+  box-shadow: 0 0 34px 10px rgba(232, 201, 143, .5), inset 0 0 34px 10px rgba(232, 201, 143, .4);
+}
+.gate.fade-out { transition: opacity .7s ease; opacity: 0; }
+
+/* ---------- hero ---------- */
+.hero {
+  position: relative; overflow: hidden;
+  min-height: 100vh; min-height: 100svh;
+  display: grid; place-items: center;
+  color: var(--pearl);
+  background: radial-gradient(110% 70% at 50% 42%, #2c1e21 0%, #170f12 58%, #0d0a0b 100%);
+  padding-block: 76px 128px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.hero::after { content: ""; position: absolute; inset: -50%; pointer-events: none; background-image: var(--grain); opacity: .05; }
+.hero-in {
+  position: relative; z-index: 1;
+  width: min(100%, 340px);
+  width: min(100%, 340px, calc((100svh - 230px) * .68));
+  aspect-ratio: 340 / 500;
+  container-type: inline-size;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding-top: 15%;
+  text-align: center;
+  will-change: transform, opacity;
+}
+.arch { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; -webkit-mask-image: linear-gradient(#000 72%, transparent 98%); mask-image: linear-gradient(#000 72%, transparent 98%); }
+.arch path { fill: none; stroke: var(--gold); stroke-width: 1; stroke-dasharray: 1 2; stroke-dashoffset: 1.01; }
+.arch path + path { stroke-opacity: .45; }
+.arch .star { fill: var(--gold-hi); stroke: none; stroke-dasharray: none; transform-box: fill-box; transform-origin: center; transform: scale(0); }
+.hero-go .arch path { animation: draw 2.6s .35s var(--ease) forwards; }
+.hero-go .arch path + path { animation-delay: .6s; }
+.hero-go .arch .star { animation: popIn .8s 2.2s var(--ease) forwards, twinkle 3.2s 3s ease-in-out infinite; }
+.eyebrow-d { margin: 0 0 22px; font: 500 10.5px/1.4 var(--sans); letter-spacing: .32em; text-transform: uppercase; color: var(--gold); opacity: 0; padding-left: .32em; }
+.hero-go .eyebrow-d { animation: fadeIn 1.2s .5s forwards; }
+.names { margin: 0; display: flex; flex-direction: column; align-items: center; font-weight: 300; }
+.nm { display: block; white-space: nowrap; color: var(--pearl); font: italic 300 clamp(48px, 16vw, 68px)/1.04 var(--serif); font-size: 19.5cqi; }
+.amp { display: block; margin: 4px 0 2px; color: var(--gold); font: italic 400 clamp(32px, 11vw, 44px)/1 var(--serif); font-size: 12.5cqi; opacity: 0; transform: scale(.6); }
+.hero-go .amp { animation: popIn 1s 1.25s var(--ease) forwards; }
+.ch { display: inline-block; opacity: 0; transform: translateY(.32em); filter: blur(10px); }
+.hero-go .ch { animation: chIn 1.15s var(--ease) forwards; animation-delay: calc(var(--d0, .6s) + var(--i) * 70ms); }
+.nm-2 { --d0: 1.35s; }
+.hero-date { display: flex; align-items: center; gap: 14px; margin: 28px 0 0; color: var(--gold-hi); font: 400 21px/1 var(--serif); letter-spacing: .2em; opacity: 0; font-variant-numeric: lining-nums; }
+.hero-date i { width: 1px; height: 18px; background: var(--gold); opacity: .75; }
+.hero-go .hero-date { animation: fadeUp 1.1s 2.15s var(--ease) forwards; }
+.cue {
+  position: absolute; z-index: 1; left: 50%; bottom: 84px; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  color: rgba(250, 246, 242, .72); text-decoration: none;
+  font: 500 10px/1 var(--sans); letter-spacing: .34em; text-transform: uppercase; padding-left: .34em;
+  opacity: 0;
+}
+.hero-go .cue { animation: fadeIn 1.2s 2.8s forwards; }
+.cue i { position: relative; width: 1px; height: 44px; overflow: hidden; background: rgba(201, 164, 107, .32); }
+.cue i::after { content: ""; position: absolute; left: -1px; top: -12px; width: 3px; height: 12px; border-radius: 2px; background: var(--gold-hi); animation: drip 2.2s var(--ease) infinite; }
+@keyframes drip { to { top: 46px; } }
+
+/* ---------- paper pages ---------- */
+.paper { position: relative; z-index: 1; background: var(--pearl); color: var(--ink); }
+.paper::before { content: ""; position: absolute; inset: 0; pointer-events: none; background-image: var(--grain); opacity: .035; mix-blend-mode: multiply; }
+.arch-top { margin-top: -44px; border-radius: 50% 50% 0 0 / 44px 44px 0 0; }
+.sec { padding-block: 72px; }
+.arch-top.sec { padding-top: 92px; }
+.wrap {
+  position: relative; max-width: 460px; margin: 0 auto; text-align: center;
+  padding-left: max(24px, env(safe-area-inset-left, 0px));
+  padding-right: max(24px, env(safe-area-inset-right, 0px));
+}
+.eyebrow { margin: 0 0 14px; padding-left: .32em; font: 500 11px/1.3 var(--sans); letter-spacing: .32em; text-transform: uppercase; color: var(--garnet); }
+.h { margin: 0 0 18px; font: 500 clamp(32px, 9.2vw, 42px)/1.1 var(--serif); color: var(--ink); text-wrap: balance; }
+.lead { max-width: 34ch; margin: 0 auto 16px; font: 400 16px/1.75 var(--sans); color: var(--ink-2); text-wrap: pretty; }
+.accent { margin: 26px auto 0; max-width: 24ch; font: italic 500 23px/1.35 var(--serif); color: var(--garnet); text-wrap: balance; }
+.orn { display: block; width: 160px; height: 24px; margin: 0 auto 26px; overflow: visible; }
+.orn path { fill: none; stroke: var(--garnet); stroke-width: 1.1; stroke-linecap: round; stroke-dasharray: 1 2; stroke-dashoffset: 1.01; }
+.orn .dot { fill: var(--garnet); stroke: none; stroke-dasharray: none; opacity: 0; }
+.orn.in path { animation: draw 1.6s var(--ease) forwards; }
+.orn.in .dot { animation: fadeIn .6s 1.1s forwards; }
+
+/* reveal */
+.rv-on .rv { opacity: 0; transform: translateY(26px); transition: opacity 1s var(--ease), transform 1.1s var(--ease); transition-delay: var(--dl, 0s); }
+.rv-on .rv.in { opacity: 1; transform: none; }
+
+/* calendar */
+.month { margin: 0 0 22px; font: italic 400 clamp(30px, 8.6vw, 38px)/1.1 var(--serif); color: var(--ink); }
+.month b { font-weight: 400; color: var(--garnet); }
+.cal { display: grid; grid-template-columns: repeat(7, 1fr); row-gap: 6px; max-width: 340px; margin: 0 auto 30px; }
+.cal-wd { padding-bottom: 12px; font: 500 10.5px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); }
+.cal-d { position: relative; height: 42px; display: grid; place-items: center; }
+.cal-d b { position: relative; z-index: 1; font: 400 16px/1 var(--sans); color: var(--ink); font-variant-numeric: tabular-nums; }
+.cal-wd.we, .cal-d.we b { color: var(--garnet); }
+.cal-d.is-day b { font-weight: 600; font-size: 18px; color: var(--garnet); }
+.cal-heart { position: absolute; left: 50%; top: 50%; width: 64px; height: 58px; margin: -32px 0 0 -32px; overflow: visible; pointer-events: none; }
+.cal-heart path { fill: none; stroke: var(--garnet); stroke-width: 1.6; stroke-linecap: round; stroke-dasharray: 1 2; stroke-dashoffset: 1.01; }
+.cal.in .cal-heart path { animation: draw 1.7s .55s var(--ease) forwards; }
+.cal.in .cal-heart { animation: beat 2.6s 2.6s ease-in-out infinite; }
+.when { margin: 0; font: italic 400 27px/1.25 var(--serif); color: var(--ink); }
+.when-time { margin: 10px 0 28px; padding-left: .3em; font: 500 12px/1 var(--sans); letter-spacing: .3em; text-transform: uppercase; color: var(--garnet); }
+.btn-ghost {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 14px 22px; border: 1px solid var(--line); border-radius: 999px;
+  color: var(--ink); text-decoration: none;
+  font: 500 11.5px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase;
+  transition: background .3s, border-color .3s;
+}
+.btn-ghost:hover { background: rgba(142, 29, 47, .05); border-color: var(--garnet); }
+.btn-ghost svg { width: 17px; height: 17px; fill: none; stroke: var(--garnet); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+
+/* venue */
+.venue-art { display: block; width: min(100%, 340px); margin: 0 auto 14px; }
+.venue-art svg { display: block; width: 100%; height: auto; overflow: visible; }
+.va path { fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.3; stroke-dasharray: 1 2; stroke-dashoffset: 1.01; }
+.va .occ { fill: var(--pearl); stroke: none; stroke-dasharray: none; }
+.va .g-sun path, .va .g-ground path { stroke: var(--gold); }
+.va .g-hill path { stroke: var(--garnet); stroke-opacity: .5; }
+.va .g-bld path { stroke: var(--garnet); }
+.va .g-bird path { stroke: var(--garnet); stroke-opacity: .7; stroke-width: 1.1; }
+.venue-art.in .va path:not(.occ) { animation: draw 2.4s var(--ease) forwards; animation-delay: var(--dd, 0s); }
+.venue-art.in .g-sun { animation: glow 4s 3s ease-in-out infinite; }
+.venue-name { margin: 0 0 12px; font: 500 clamp(36px, 10.5vw, 46px)/1.04 var(--serif); color: var(--ink); text-wrap: balance; }
+.addr { margin: 0; font: 400 15.5px/1.65 var(--sans); color: var(--ink-2); text-wrap: balance; }
+.vtime { margin: 16px 0 30px; padding-left: .26em; font: 500 12px/1 var(--sans); letter-spacing: .26em; text-transform: uppercase; color: var(--garnet); }
+.btn-map {
+  position: relative; overflow: hidden;
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  width: min(100%, 330px); margin: 0 auto; padding: 19px 22px;
+  border-radius: 999px; background: var(--noir); color: var(--pearl); text-decoration: none;
+  font: 500 12px/1.2 var(--sans); letter-spacing: .16em; text-transform: uppercase;
+  box-shadow: 0 16px 30px -16px rgba(142, 29, 47, .7);
+  transition: transform .3s var(--ease), box-shadow .3s;
+}
+.btn-map:hover { box-shadow: 0 20px 36px -14px rgba(142, 29, 47, .75); }
+.btn-map:active { transform: scale(.98); }
+.btn-map svg { flex: none; width: 18px; height: 18px; fill: none; stroke: var(--gold-hi); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.btn-map .arr { transition: transform .3s var(--ease); }
+.btn-map:hover .arr { transform: translateX(4px); }
+.btn-map::after { content: ""; position: absolute; top: 0; bottom: 0; left: -60%; width: 40%; background: linear-gradient(100deg, transparent, rgba(240, 220, 174, .32), transparent); transform: skewX(-20deg); animation: shine 5s 2s infinite; }
+@keyframes shine { 0% { left: -60%; } 28%, 100% { left: 130%; } }
+
+
+/* countdown band */
+.band {
+  position: relative; z-index: 1; overflow: hidden;
+  color: var(--pearl); text-align: center;
+  background: radial-gradient(120% 90% at 50% 0%, #2c1d20, #120d0e 72%);
+}
+.band::after { content: ""; position: absolute; inset: -50%; pointer-events: none; background-image: var(--grain); opacity: .05; }
+.band .h { color: var(--gold-hi); font-style: italic; font-weight: 400; }
+.cd { display: grid; grid-template-columns: repeat(4, 1fr); max-width: 370px; margin: 30px auto 0; }
+.cd-u { position: relative; display: flex; flex-direction: column; align-items: center; gap: 12px; min-width: 0; }
+.cd-u + .cd-u::before { content: ""; position: absolute; left: 0; top: 4%; height: 62%; width: 1px; background: linear-gradient(transparent, rgba(201, 164, 107, .6), transparent); }
+.cd-n { display: block; color: var(--pearl); font: 300 clamp(40px, 12.5vw, 56px)/1 var(--serif); font-variant-numeric: lining-nums tabular-nums; }
+.cd-n.tick { animation: tick .6s var(--ease); }
+@keyframes tick { from { opacity: 0; transform: translateY(-38%); filter: blur(4px); } to { opacity: 1; transform: none; filter: none; } }
+.cd-l { font: 500 10px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+
+/* finale */
+.rings { display: block; width: min(72%, 250px); height: auto; margin: 0 auto 22px; overflow: visible; }
+.rings path { fill: none; stroke: var(--garnet); stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1 2; stroke-dashoffset: 1.01; }
+.rings .occ { fill: var(--pearl); stroke: none; stroke-dasharray: none; }
+.rings .spark { fill: var(--gold); stroke: none; stroke-dasharray: none; transform-box: fill-box; transform-origin: center; transform: scale(0); }
+.rings.in path:not(.occ):not(.spark) { animation: draw 2.2s var(--ease) forwards; animation-delay: var(--dd, 0s); }
+.rings.in .spark { animation: popIn .7s var(--ease) forwards, twinkle 2.8s ease-in-out infinite; animation-delay: var(--sd, 1.8s), calc(var(--sd, 1.8s) + .7s); }
+.finale-t { margin: 0 0 26px; font: 500 clamp(28px, 8vw, 36px)/1.2 var(--serif); text-wrap: balance; }
+.sign-l { margin: 0 0 10px; padding-left: .3em; font: 500 11px/1 var(--sans); letter-spacing: .3em; text-transform: uppercase; color: var(--ink-2); }
+.sign { margin: 0; font: italic 400 clamp(30px, 9vw, 38px)/1.15 var(--serif); color: var(--garnet); }
+.sign i { color: var(--gold); padding: 0 .12em; }
+.foot { position: relative; z-index: 1; margin: 0; padding-block: 28px; text-align: center; color: var(--gold); background: var(--noir); font: 500 10.5px/1 var(--sans); letter-spacing: .34em; text-transform: uppercase; }
+
+/* keyframes */
+@keyframes fadeIn { to { opacity: 1; } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes popIn { from { opacity: 0; transform: scale(.4); } to { opacity: 1; transform: scale(1); } }
+@keyframes grow { to { transform: scaleY(1); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes beat { 0%, 100% { transform: scale(1); } 12% { transform: scale(1.14); } 24% { transform: scale(1); } 36% { transform: scale(1.1); } 50% { transform: scale(1); } }
+@keyframes pulse { 0% { transform: scale(1); opacity: .7; } 100% { transform: scale(1.75); opacity: 0; } }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes chIn { to { opacity: 1; transform: none; filter: blur(0); } }
+@keyframes twinkle { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .45; transform: scale(.7); } }
+@keyframes glow { 0%, 100% { opacity: 1; } 50% { opacity: .55; } }
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; animation-delay: 0s !important; transition-duration: .01ms !important; }
+  .ch, .amp, .hero-date, .cue, .eyebrow-d { opacity: 1 !important; transform: none !important; filter: none !important; }
+  .arch path, .orn path, .cal-heart path, .va path, .rings path { stroke-dashoffset: 0 !important; }
+  .arch .star, .rings .spark { transform: none !important; }
+}
+</style>
+<noscript><style>.gate { display: none; } html.is-locked, html.is-locked body { overflow: auto; } .ch, .amp, .hero-date, .eyebrow-d { opacity: 1; transform: none; filter: none; }</style></noscript>
+</head>
+<body>
+
+<audio id="bgm" src="music.mp3" preload="auto" loop></audio>
+
+<div class="hud">
+  <button class="btn-music glass" type="button" data-music aria-pressed="false" data-t-aria="musicAria">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+    <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  </button>
+  <div class="lang glass" role="group" data-t-aria="langAria">
+    <button type="button" data-lang="uz" aria-pressed="true">UZ</button>
+    <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+  </div>
+</div>
+
+<section class="gate" id="gate" aria-labelledby="gateTitle">
+  <canvas class="fx" id="gateFx" aria-hidden="true"></canvas>
+  <div class="gate-in">
+    <p class="gate-date">14 · 11 · 2026</p>
+    <span class="gate-line" aria-hidden="true"></span>
+    <svg class="gate-heart" viewBox="0 0 24 22" aria-hidden="true"><path d="M12 21S2.6 15.4 1.2 9.4C.3 5.6 2.6 2 6.4 2c2.4 0 4.3 1.5 5.6 3.4C13.3 3.5 15.2 2 17.6 2c3.8 0 6.1 3.6 5.2 7.4C21.4 15.4 12 21 12 21z"/></svg>
+    <h1 class="gate-title" id="gateTitle" data-t="gateTitle"></h1>
+    <button class="lock" type="button" data-open data-t-aria="openAria">
+      <svg class="lock-ring" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="58"/></svg>
+      <span class="lock-pulse" aria-hidden="true"></span>
+      <svg class="lock-ico" viewBox="0 0 32 40" aria-hidden="true">
+        <path class="shackle" d="M9 19v-6.5a7 7 0 0 1 14 0V19"/>
+        <path d="M6.5 19h19a2.5 2.5 0 0 1 2.5 2.5v13a2.5 2.5 0 0 1-2.5 2.5h-19A2.5 2.5 0 0 1 4 34.5v-13A2.5 2.5 0 0 1 6.5 19z"/>
+        <circle cx="16" cy="26.3" r="1.7"/>
+        <path d="M16 28v3.6"/>
+      </svg>
+    </button>
+    <p class="gate-hint" data-t="gateHint"></p>
+  </div>
+  <p class="gate-names"><span data-t="name1"></span><i>&amp;</i><span data-t="name2"></span></p>
+</section>
+<div class="iris" id="iris" hidden></div>
+
+<main id="site">
+  <header class="hero" id="top">
+    <canvas class="fx" id="heroFx" aria-hidden="true"></canvas>
+    <div class="hero-in" id="heroIn">
+      <svg class="arch" viewBox="0 0 340 500" aria-hidden="true">
+        <path pathLength="1" d="M10 500V170a160 160 0 0 1 320 0v330"/>
+        <path pathLength="1" d="M22 500V172a148 148 0 0 1 296 0v328"/>
+        <path class="star" d="M170 1l2.6 6.4L179 10l-6.4 2.6L170 19l-2.6-6.4L161 10l6.4-2.6z"/>
+      </svg>
+      <p class="eyebrow-d" data-t="heroEyebrow"></p>
+      <h2 class="names">
+        <span class="nm nm-1" data-t="name1" data-letters></span>
+        <span class="amp" aria-hidden="true">&amp;</span>
+        <span class="nm nm-2" data-t="name2" data-letters></span>
+      </h2>
+      <p class="hero-date"><span>14</span><i></i><span>11</span><i></i><span>2026</span></p>
+    </div>
+    <a class="cue" href="#invite"><span data-t="scroll"></span><i aria-hidden="true"></i></a>
+  </header>
+
+  <section class="paper sec arch-top" id="invite">
+    <div class="wrap">
+      <svg class="orn rv" viewBox="0 0 160 24" aria-hidden="true">
+        <path pathLength="1" d="M8 12h52"/>
+        <path pathLength="1" d="M100 12h52"/>
+        <path pathLength="1" d="M80 2.5l9.5 9.5-9.5 9.5-9.5-9.5z"/>
+        <path pathLength="1" d="M80 8l4 4-4 4-4-4z"/>
+        <circle class="dot" cx="5" cy="12" r="1.8"/>
+        <circle class="dot" cx="155" cy="12" r="1.8"/>
+      </svg>
+      <h3 class="h rv" data-t="inviteTitle"></h3>
+      <p class="lead rv" style="--dl:.1s" data-t="invite1"></p>
+      <p class="lead rv" style="--dl:.2s" data-t="invite2"></p>
+      <p class="accent rv" style="--dl:.3s" data-t="invite3"></p>
+    </div>
+  </section>
+
+  <section class="paper sec" id="date">
+    <div class="wrap">
+      <p class="eyebrow rv" data-t="dateEyebrow"></p>
+      <h3 class="month rv"><span data-t="month"></span> <b>2026</b></h3>
+      <div class="cal rv" data-cal></div>
+      <p class="when rv" data-t="dateLong"></p>
+      <p class="when-time rv" data-t="timeLong"></p>
+      <a class="btn-ghost rv" data-href="gcal" href="#">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></svg>
+        <span data-t="addCal"></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="paper sec venue" id="venue">
+    <div class="wrap">
+      <a class="venue-art rv" data-href="map" href="https://yandex.ru/maps/org/128245786707" target="_blank" rel="noopener" data-t-aria="mapAria">
+        <svg class="va" viewBox="0 0 320 200" aria-hidden="true">
+          <g class="g-sun">
+            <path pathLength="1" d="M102 112a58 58 0 1 1 116 0a58 58 0 1 1-116 0"/>
+            <path pathLength="1" style="--dd:1s" d="M223.75 94.92L235.34 91.81"/>
+            <path pathLength="1" style="--dd:1.1s" d="M214.07 74.14L223.89 67.26"/>
+            <path pathLength="1" style="--dd:1.2s" d="M197.86 57.93L204.74 48.1"/>
+            <path pathLength="1" style="--dd:1.3s" d="M177.08 48.25L180.19 36.66"/>
+            <path pathLength="1" style="--dd:1.3s" d="M142.92 48.25L139.81 36.66"/>
+            <path pathLength="1" style="--dd:1.2s" d="M122.14 57.93L115.26 48.1"/>
+            <path pathLength="1" style="--dd:1.1s" d="M105.93 74.14L96.11 67.26"/>
+            <path pathLength="1" style="--dd:1s" d="M96.25 94.92L84.66 91.81"/>
+          </g>
+          <path class="occ" d="M0 176V150C36 122 82 118 124 142V176z"/>
+          <path class="occ" d="M196 142C238 116 284 120 320 148V176H196z"/>
+          <g class="g-hill">
+            <path pathLength="1" style="--dd:.3s" d="M0 150C36 122 82 118 124 142"/>
+            <path pathLength="1" style="--dd:.3s" d="M196 142C238 116 284 120 320 148"/>
+          </g>
+          <path class="occ" d="M82 160V128h36V110h-4v-6h24v-7h-2c0-20 14-27 24-37 10 10 24 17 24 37h-2v7h24v6h-4v18h36v32z"/>
+          <path class="occ" d="M100 172v-12h120v12z"/>
+          <g class="g-bld">
+            <path pathLength="1" style="--dd:.5s" d="M82 160V128M78 128h40M238 160V128M202 128h40"/>
+            <path pathLength="1" style="--dd:.7s" d="M93 152v-13a7 7 0 0 1 14 0v13zM213 152v-13a7 7 0 0 1 14 0v13z"/>
+            <path pathLength="1" style="--dd:.45s" d="M118 160V110M202 160V110"/>
+            <path pathLength="1" style="--dd:.6s" d="M114 104h92v6h-92z"/>
+            <path pathLength="1" style="--dd:.8s" d="M126 152v-24a6 6 0 0 1 12 0v24zM182 152v-24a6 6 0 0 1 12 0v24z"/>
+            <path pathLength="1" style="--dd:.7s" d="M147 160v-30q0-11 13-17 13 6 13 17v30"/>
+            <path pathLength="1" style="--dd:.9s" d="M152 160v-29q0-8.5 8-12.5 8 4 8 12.5v29"/>
+            <path pathLength="1" style="--dd:.8s" d="M138 104v-7h44v7"/>
+            <path pathLength="1" style="--dd:.9s" d="M136 97c0-20 14-27 24-37 10 10 24 17 24 37"/>
+            <path pathLength="1" style="--dd:1.2s" d="M160 60v-8M160 44l3 4-3 4-3-4z"/>
+            <path pathLength="1" style="--dd:.4s" d="M108 160v6h104v-6M100 166v6h120v-6"/>
+          </g>
+          <g class="g-ground">
+            <path pathLength="1" style="--dd:.2s" d="M16 172h288"/>
+            <path pathLength="1" style="--dd:.6s" d="M40 184c60-7 180-7 240 0"/>
+            <path pathLength="1" style="--dd:.8s" d="M86 195c44-5 104-5 148 0"/>
+          </g>
+          <g class="g-bird">
+            <path pathLength="1" style="--dd:1.6s" d="M54 72q5-5 10 0q5-5 10 0"/>
+            <path pathLength="1" style="--dd:1.75s" d="M72 56q4-4 8 0q4-4 8 0"/>
+            <path pathLength="1" style="--dd:1.9s" d="M238 60q5-5 10 0q5-5 10 0"/>
+          </g>
+        </svg>
+      </a>
+      <p class="eyebrow rv" data-t="venueEyebrow"></p>
+      <h3 class="venue-name rv" data-t="venueName"></h3>
+      <p class="addr rv" style="--dl:.1s" data-t="venueAddr"></p>
+      <p class="vtime rv" style="--dl:.15s" data-t="venueTime"></p>
+      <a class="btn-map rv" style="--dl:.2s" data-href="map" href="https://yandex.ru/maps/org/128245786707" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <span data-t="mapBtn"></span>
+        <svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="band sec" id="countdown">
+    <div class="wrap">
+      <h3 class="h rv" data-cd-title></h3>
+      <div class="cd rv" style="--dl:.1s" role="timer">
+        <div class="cd-u"><b class="cd-n" data-cd="d">0</b><span class="cd-l" data-cdl="d"></span></div>
+        <div class="cd-u"><b class="cd-n" data-cd="h">00</b><span class="cd-l" data-cdl="h"></span></div>
+        <div class="cd-u"><b class="cd-n" data-cd="m">00</b><span class="cd-l" data-cdl="m"></span></div>
+        <div class="cd-u"><b class="cd-n" data-cd="s">00</b><span class="cd-l" data-cdl="s"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper sec" id="finale">
+    <div class="wrap">
+      <svg class="rings rv" viewBox="0 0 240 160" aria-hidden="true">
+        <path pathLength="1" d="M58 98a40 40 0 1 0 80 0a40 40 0 1 0-80 0"/>
+        <path pathLength="1" style="--dd:.25s" d="M64 98a34 34 0 1 0 68 0a34 34 0 1 0-68 0"/>
+        <path pathLength="1" style="--dd:.4s" d="M102 98a40 40 0 1 0 80 0a40 40 0 1 0-80 0"/>
+        <path pathLength="1" style="--dd:.65s" d="M108 98a34 34 0 1 0 68 0a34 34 0 1 0-68 0"/>
+        <path class="occ" d="M85 47l5.5-8h15l5.5 8-13 15z"/>
+        <path pathLength="1" style="--dd:1s" d="M85 47l5.5-8h15l5.5 8-13 15z"/>
+        <path pathLength="1" style="--dd:1.3s" d="M85 47h26M94.5 47L98 62l3.5-15M90.5 39l4 8M105.5 39l-4 8M98 39v8"/>
+        <path class="spark" style="--sd:1.8s" d="M52 30l1.8 6.2L60 38l-6.2 1.8L52 46l-1.8-6.2L44 38l6.2-1.8z"/>
+        <path class="spark" style="--sd:2.1s" d="M190 40l1.5 5L196.5 46.5l-5 1.5L190 53l-1.5-5-5-1.5 5-1.5z"/>
+        <path class="spark" style="--sd:2.4s" d="M204 128l1.3 4.4 4.4 1.3-4.4 1.3L204 139.4l-1.3-4.4-4.4-1.3 4.4-1.3z"/>
+        <path class="spark" style="--sd:2.7s" d="M34 122l1.2 4 4 1.2-4 1.2L34 132.4l-1.2-4-4-1.2 4-1.2z"/>
+      </svg>
+      <p class="finale-t rv" data-t="finale"></p>
+      <p class="sign-l rv" style="--dl:.1s" data-t="sign"></p>
+      <p class="sign rv" style="--dl:.2s"><span data-t="name1"></span> <i>&amp;</i> <span data-t="name2"></span></p>
+    </div>
+  </section>
+  <p class="foot" data-t="footer"></p>
+</main>
+
+<script>
+/* ===== Invitation core: texts (UZ/RU), music, calendar, countdown, reveals ===== */
+(function () {
+  'use strict';
+
+  var root = document.documentElement;
+  var EVENT_TS = Date.parse('2026-11-14T18:00:00+05:00');
+  var MAP_URL = 'https://yandex.ru/maps/org/128245786707';
+  var reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+  var TEXT = {
+    uz: {
+      name1: 'Yorqinjon',
+      name2: 'Sevara',
+      musicAria: 'Musiqa',
+      langAria: 'Til',
+      heroEyebrow: 'Nikoh to‘yiga taklifnoma',
+      scroll: 'Pastga suring',
+      inviteTitle: 'Aziz mehmonimiz!',
+      invite1: 'Tez orada hayotimizdagi eng baxtli kunlardan biri — nikoh to‘yimiz bo‘lib o‘tadi. Bu quvonchni eng yaqin insonlarimiz bilan baham ko‘rmoqchimiz.',
+      invite2: 'Sizni to‘y oqshomimizga samimiy taklif etamiz.',
+      invite3: 'Sizni davramizda ko‘rishdan baxtiyor bo‘lamiz!',
+      dateEyebrow: 'To‘y sanasi',
+      month: 'Noyabr',
+      wd: ['Du', 'Se', 'Ch', 'Pa', 'Ju', 'Sh', 'Ya'],
+      dateLong: '14-noyabr, shanba',
+      timeLong: 'soat 18:00',
+      addCal: 'Taqvimga qo‘shish',
+      venueEyebrow: 'To‘y manzili',
+      venueName: 'Zolotaya Dolina',
+      venueAddr: 'Toshkent sh., Yunusobod tumani,<br>Otchopar-2 mahalla fuqarolar yig‘ini',
+      venueTime: 'Boshlanishi soat 18:00 da',
+      mapBtn: 'Yandex xaritada ochish',
+      mapAria: 'Zolotaya Dolina manzilini Yandex xaritada ochish',
+      cdTitle: 'To‘yimizgacha qoldi',
+      cdDone: 'Bugun bizning kunimiz!',
+      cdLabels: ['kun', 'soat', 'daqiqa', 'soniya'],
+      finale: 'Sizni intiqlik bilan kutamiz!',
+      sign: 'Mehr bilan',
+      footer: '14.11.2026 · Toshkent',
+      gcalTitle: 'Yorqinjon va Sevaraning nikoh to‘yi',
+      gcalLoc: 'Zolotaya Dolina, Toshkent, Yunusobod tumani, Otchopar-2 MFY',
+      gcalDetails: 'Boshlanishi soat 18:00 da. Xarita: '
+    },
+    ru: {
+      name1: 'Ёркинжон',
+      name2: 'Севара',
+      musicAria: 'Музыка',
+      langAria: 'Язык',
+      heroEyebrow: 'Приглашение на свадьбу',
+      scroll: 'Листайте вниз',
+      inviteTitle: 'Дорогие гости!',
+      invite1: 'Совсем скоро наступит один из самых счастливых дней в нашей жизни — день нашей свадьбы. Мы хотим разделить эту радость с самыми близкими людьми.',
+      invite2: 'Сердечно приглашаем вас на наше торжество.',
+      invite3: 'Будем счастливы видеть вас среди наших гостей!',
+      dateEyebrow: 'Дата торжества',
+      month: 'Ноябрь',
+      wd: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
+      dateLong: '14 ноября, суббота',
+      timeLong: 'в 18:00',
+      addCal: 'Добавить в календарь',
+      venueEyebrow: 'Место проведения',
+      venueName: 'Золотая Долина',
+      venueAddr: 'Ташкент, Юнусабадский район,<br>махаллинский сход граждан Атчапар-2',
+      venueTime: 'Начало в 18:00',
+      mapBtn: 'Открыть в Яндекс Картах',
+      mapAria: 'Открыть «Золотая Долина» в Яндекс Картах',
+      cdTitle: 'До нашей свадьбы осталось',
+      cdDone: 'Этот день настал!',
+      cdLabels: ['дней', 'часов', 'минут', 'секунд'],
+      finale: 'Ждём вас с нетерпением!',
+      sign: 'С любовью',
+      footer: '14.11.2026 · Ташкент',
+      gcalTitle: 'Свадьба Ёркинжона и Севары',
+      gcalLoc: 'Золотая Долина, Ташкент, Юнусабадский район, Атчапар-2',
+      gcalDetails: 'Начало в 18:00. Карта: '
+    }
+  };
+
+  var RU_UNITS = [['день', 'дня', 'дней'], ['час', 'часа', 'часов'], ['минута', 'минуты', 'минут'], ['секунда', 'секунды', 'секунд']];
+
+  var W = window.W = {
+    reduce: reduce,
+    mapUrl: MAP_URL,
+    lang: 'uz',
+    opened: false,
+    userPaused: false,
+    opts: {}
+  };
+
+  function $(s, c) { return (c || document).querySelector(s); }
+  function $$(s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); }
+  W.$ = $; W.$$ = $$;
+
+  W.t = function (k) {
+    var d = TEXT[W.lang];
+    if (d && d[k] != null) return d[k];
+    return TEXT.uz[k] != null ? TEXT.uz[k] : '';
+  };
+
+  /* ---------- letters ---------- */
+  function splitLetters(el) {
+    var txt = el.textContent;
+    el.textContent = '';
+    var sr = document.createElement('span');
+    sr.className = 'sr';
+    sr.textContent = txt;
+    el.appendChild(sr);
+    for (var i = 0; i < txt.length; i++) {
+      var s = document.createElement('span');
+      s.className = 'ch';
+      s.setAttribute('aria-hidden', 'true');
+      s.style.setProperty('--i', i);
+      s.textContent = txt.charAt(i) === ' ' ? ' ' : txt.charAt(i);
+      el.appendChild(s);
+    }
+  }
+
+  /* ---------- language ---------- */
+  W.setLang = function (l) {
+    if (!TEXT[l]) l = 'uz';
+    W.lang = l;
+    root.lang = l;
+    $$('[data-t]').forEach(function (el) {
+      el.innerHTML = W.t(el.getAttribute('data-t'));
+      if (el.hasAttribute('data-letters')) splitLetters(el);
+    });
+    $$('[data-t-aria]').forEach(function (el) {
+      el.setAttribute('aria-label', W.t(el.getAttribute('data-t-aria')));
+    });
+    $$('[data-lang]').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === l));
+    });
+    buildCalendar();
+    renderCountdown(true);
+    $$('[data-href="gcal"]').forEach(function (a) { a.href = gcalUrl(); });
+    try { localStorage.setItem('ys-lang', l); } catch (e) { /* storage unavailable */ }
+    if (W.opts.onLang) W.opts.onLang(l);
+  };
+
+  /* ---------- calendar (November 2026, Monday first) ---------- */
+  function buildCalendar() {
+    $$('[data-cal]').forEach(function (el) {
+      var wd = W.t('wd');
+      var html = '';
+      for (var i = 0; i < 7; i++) {
+        html += '<span class="cal-wd' + (i >= 5 ? ' we' : '') + '">' + wd[i] + '</span>';
+      }
+      var off = (new Date(2026, 10, 1).getDay() + 6) % 7;
+      for (var j = 0; j < off; j++) html += '<span class="cal-d is-empty" aria-hidden="true"></span>';
+      for (var d = 1; d <= 30; d++) {
+        var col = (off + d - 1) % 7;
+        var day = d === 14;
+        html += '<span class="cal-d' + (col >= 5 ? ' we' : '') + (day ? ' is-day' : '') + '"' +
+          (day ? ' style="--col:' + col + '"' : '') + '><b>' + d + '</b>' +
+          (day ? (W.opts.calMark || '') : '') + '</span>';
+      }
+      el.innerHTML = html;
+    });
+  }
+
+  /* ---------- countdown ---------- */
+  function ruPlural(n, f) {
+    var a = n % 10, b = n % 100;
+    if (a === 1 && b !== 11) return f[0];
+    if (a >= 2 && a <= 4 && (b < 12 || b > 14)) return f[1];
+    return f[2];
+  }
+  function setUnit(key, str, label, force) {
+    $$('[data-cd="' + key + '"]').forEach(function (el) {
+      if (el.textContent !== str) {
+        el.textContent = str;
+        if (!force) {
+          el.classList.remove('tick');
+          void el.offsetWidth;
+          el.classList.add('tick');
+        }
+      }
+    });
+    $$('[data-cdl="' + key + '"]').forEach(function (el) {
+      if (el.textContent !== label) el.textContent = label;
+    });
+  }
+  function renderCountdown(force) {
+    var diff = Math.max(0, EVENT_TS - Date.now());
+    var v = [Math.floor(diff / 864e5), Math.floor(diff / 36e5) % 24, Math.floor(diff / 6e4) % 60, Math.floor(diff / 1e3) % 60];
+    var keys = ['d', 'h', 'm', 's'];
+    var labels = W.t('cdLabels');
+    for (var i = 0; i < 4; i++) {
+      var str = i === 0 ? String(v[i]) : (v[i] < 10 ? '0' : '') + v[i];
+      var label = W.lang === 'ru' ? ruPlural(v[i], RU_UNITS[i]) : labels[i];
+      setUnit(keys[i], str, label, force === true);
+    }
+    $$('[data-cd-title]').forEach(function (el) {
+      var txt = diff > 0 ? W.t('cdTitle') : W.t('cdDone');
+      if (el.innerHTML !== txt) el.innerHTML = txt;
+    });
+  }
+
+  function gcalUrl() {
+    return 'https://calendar.google.com/calendar/render?action=TEMPLATE' +
+      '&text=' + encodeURIComponent(W.t('gcalTitle')) +
+      '&dates=20261114T130000Z/20261114T180000Z' +
+      '&location=' + encodeURIComponent(W.t('gcalLoc')) +
+      '&details=' + encodeURIComponent(W.t('gcalDetails') + MAP_URL);
+  }
+
+  /* ---------- music ---------- */
+  var audio = null, fadeRaf = 0, fadeTimer = 0, resumeOnShow = false;
+  function setMusicUI(on) {
+    root.classList.toggle('music-on', on);
+    $$('[data-music]').forEach(function (b) { b.setAttribute('aria-pressed', String(on)); });
+  }
+  function fadeTo(target, ms, cb) {
+    cancelAnimationFrame(fadeRaf);
+    clearTimeout(fadeTimer);
+    var from = audio.volume, t0 = performance.now(), finished = false;
+    function end() {
+      if (finished) return;
+      finished = true;
+      try { audio.volume = target; } catch (e) { /* iOS keeps volume fixed */ }
+      if (cb) cb();
+    }
+    function step(t) {
+      var k = Math.min(1, (t - t0) / ms);
+      try { audio.volume = from + (target - from) * k; } catch (e) { /* iOS */ }
+      if (k < 1) fadeRaf = requestAnimationFrame(step); else end();
+    }
+    fadeRaf = requestAnimationFrame(step);
+    fadeTimer = setTimeout(end, ms + 250);
+  }
+  W.play = function () {
+    if (!audio) return;
+    try { audio.volume = 0; } catch (e) { /* iOS */ }
+    setMusicUI(true);
+    var p = audio.play();
+    if (p && p.then) {
+      p.then(function () { fadeTo(0.8, 2600); }).catch(function () { setMusicUI(false); });
+    } else {
+      fadeTo(0.8, 2600);
+    }
+  };
+  W.pause = function () {
+    if (!audio) return;
+    setMusicUI(false);
+    if (document.hidden) { audio.pause(); return; }
+    fadeTo(0, 380, function () { audio.pause(); });
+  };
+  function toggleMusic() {
+    if (root.classList.contains('music-on')) { W.userPaused = true; W.pause(); }
+    else { W.userPaused = false; W.play(); }
+  }
+  document.addEventListener('visibilitychange', function () {
+    if (!audio) return;
+    if (document.hidden) {
+      if (!audio.paused) { resumeOnShow = true; audio.pause(); }
+    } else if (resumeOnShow) {
+      resumeOnShow = false;
+      if (!W.userPaused && root.classList.contains('music-on')) {
+        var p = audio.play();
+        if (p && p.catch) p.catch(function () { setMusicUI(false); });
+      }
+    }
+  });
+
+  /* ---------- reveal on scroll ---------- */
+  function startReveal() {
+    var els = $$('.rv');
+    if (!('IntersectionObserver' in window) || reduce) {
+      els.forEach(function (e) { e.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.14, rootMargin: '0px 0px -6% 0px' });
+    els.forEach(function (e) { io.observe(e); });
+  }
+
+  /* ---------- scroll hooks ---------- */
+  var scrollFns = [], ticking = false;
+  W.onScroll = function (fn) { scrollFns.push(fn); };
+  window.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      ticking = false;
+      var y = window.pageYOffset || document.documentElement.scrollTop;
+      for (var i = 0; i < scrollFns.length; i++) scrollFns[i](y);
+    });
+  }, { passive: true });
+
+  /* ---------- canvas loop helper (pauses off-screen) ---------- */
+  W.canvas = function (canvas, api) {
+    var ctx = canvas.getContext('2d');
+    var w = 0, h = 0, raf = 0, running = false, ready = false;
+    function resize() {
+      var dpr = Math.min(2, window.devicePixelRatio || 1);
+      var r = canvas.getBoundingClientRect();
+      if (!r.width || !r.height) return;
+      var first = !ready || Math.abs(r.width - w) > 40;
+      w = r.width; h = r.height;
+      canvas.width = Math.round(w * dpr);
+      canvas.height = Math.round(h * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      if (first && api.setup) api.setup(w, h);
+      ready = true;
+      if (reduce) api.draw(ctx, w, h, 0);
+    }
+    function frame(t) {
+      if (!running) return;
+      api.draw(ctx, w, h, t);
+      raf = requestAnimationFrame(frame);
+    }
+    function start() {
+      if (running || reduce) return;
+      if (!ready) resize();
+      running = true;
+      raf = requestAnimationFrame(frame);
+    }
+    function stop() { running = false; cancelAnimationFrame(raf); }
+    resize();
+    window.addEventListener('resize', resize);
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (e) {
+        if (e[0].isIntersecting) start(); else stop();
+      }).observe(canvas);
+    } else start();
+    return { start: start, stop: stop, resize: resize };
+  };
+
+  /* ---------- open sequence ---------- */
+  W.heroGo = function () { root.classList.add('hero-go'); };
+  W.open = function () {
+    if (W.opened) return;
+    W.opened = true;
+    if (!W.userPaused) W.play();
+    root.classList.add('is-opening');
+    var finished = false;
+    function finish() {
+      if (finished) return;
+      finished = true;
+      root.classList.remove('is-locked', 'is-opening');
+      root.classList.add('is-open', 'hero-go');
+      var g = $('#gate');
+      if (g) g.hidden = true;
+      startReveal();
+      if (W.opts.onOpened) W.opts.onOpened();
+    }
+    if (W.opts.onOpen) W.opts.onOpen(finish); else finish();
+    setTimeout(finish, 6000);
+  };
+
+  W.init = function (opts) {
+    W.opts = opts || {};
+    var extra = W.opts.text || {};
+    ['uz', 'ru'].forEach(function (l) {
+      var src = extra[l] || {};
+      for (var k in src) if (Object.prototype.hasOwnProperty.call(src, k)) TEXT[l][k] = src[k];
+    });
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+    root.classList.add('is-locked');
+    if (reduce) root.classList.add('reduce');
+    else if ('IntersectionObserver' in window) root.classList.add('rv-on');
+
+    audio = $('#bgm');
+    $$('[data-music]').forEach(function (b) { b.addEventListener('click', toggleMusic); });
+    $$('[data-lang]').forEach(function (b) {
+      b.addEventListener('click', function () { W.setLang(b.getAttribute('data-lang')); });
+    });
+    $$('[data-href="map"]').forEach(function (a) {
+      a.href = MAP_URL; a.target = '_blank'; a.rel = 'noopener';
+    });
+    $$('[data-href="gcal"]').forEach(function (a) { a.target = '_blank'; a.rel = 'noopener'; });
+
+    var l = 'uz';
+    try {
+      var saved = localStorage.getItem('ys-lang');
+      if (saved && TEXT[saved]) l = saved;
+    } catch (e) { /* storage unavailable */ }
+    W.setLang(l);
+    renderCountdown(true);
+    setInterval(renderCountdown, 1000);
+
+    $$('[data-open]').forEach(function (b) { b.addEventListener('click', W.open); });
+    requestAnimationFrame(function () { root.classList.add('is-ready'); });
+  };
+})();
+
+</script>
+<script>
+(function () {
+  'use strict';
+
+  /* golden dust + bokeh for the dark screens */
+  function dust(canvas, nBokeh, nDust) {
+    var sprite = document.createElement('canvas');
+    var S = 64;
+    sprite.width = sprite.height = S * 2;
+    var g = sprite.getContext('2d');
+    var grd = g.createRadialGradient(S, S, 0, S, S, S);
+    grd.addColorStop(0, 'rgba(236,208,150,1)');
+    grd.addColorStop(0.5, 'rgba(236,208,150,.35)');
+    grd.addColorStop(1, 'rgba(236,208,150,0)');
+    g.fillStyle = grd;
+    g.fillRect(0, 0, S * 2, S * 2);
+    var bokeh = [], motes = [], last = 0;
+    return W.canvas(canvas, {
+      setup: function (w, h) {
+        bokeh = []; motes = [];
+        for (var i = 0; i < nBokeh; i++) {
+          bokeh.push({ x: Math.random() * w, y: Math.random() * h, r: 16 + Math.random() * 58, a: 0.035 + Math.random() * 0.085, vx: (Math.random() - 0.5) * 0.12, vy: -0.04 - Math.random() * 0.1, p: Math.random() * 6.28 });
+        }
+        for (var j = 0; j < nDust; j++) {
+          motes.push({ x: Math.random() * w, y: Math.random() * h, r: 0.5 + Math.random() * 1.4, vx: (Math.random() - 0.5) * 0.14, vy: -0.12 - Math.random() * 0.32, p: Math.random() * 6.28, s: 0.6 + Math.random() * 1.6 });
+        }
+      },
+      draw: function (ctx, w, h, t) {
+        var dt = last ? Math.min(3, (t - last) / 16.7) : 1;
+        last = t;
+        ctx.clearRect(0, 0, w, h);
+        ctx.globalCompositeOperation = 'lighter';
+        for (var i = 0; i < bokeh.length; i++) {
+          var b = bokeh[i];
+          b.x += b.vx * dt; b.y += b.vy * dt;
+          if (b.y < -b.r) { b.y = h + b.r; b.x = Math.random() * w; }
+          if (b.x < -b.r) b.x = w + b.r; else if (b.x > w + b.r) b.x = -b.r;
+          ctx.globalAlpha = b.a * (0.7 + 0.3 * Math.sin(t * 0.0006 + b.p));
+          ctx.drawImage(sprite, b.x - b.r, b.y - b.r, b.r * 2, b.r * 2);
+        }
+        ctx.fillStyle = '#f3dfb2';
+        for (var j = 0; j < motes.length; j++) {
+          var m = motes[j];
+          m.x += m.vx * dt; m.y += m.vy * dt;
+          if (m.y < -4) { m.y = h + 4; m.x = Math.random() * w; }
+          ctx.globalAlpha = 0.2 + 0.7 * (0.5 + 0.5 * Math.sin(t * 0.002 * m.s + m.p));
+          ctx.beginPath();
+          ctx.arc(m.x, m.y, m.r, 0, 6.2832);
+          ctx.fill();
+        }
+        ctx.globalAlpha = 1;
+        ctx.globalCompositeOperation = 'source-over';
+      }
+    });
+  }
+
+  /* golden iris that opens the lock screen onto the hero */
+  function iris(cx, cy, done) {
+    var gate = W.$('#gate'), ring = W.$('#iris');
+    var maxR = Math.sqrt(Math.pow(Math.max(cx, innerWidth - cx), 2) + Math.pow(Math.max(cy, innerHeight - cy), 2)) + 60;
+    var D = 1350, t0 = 0;
+    ring.style.left = cx + 'px';
+    ring.style.top = cy + 'px';
+    ring.hidden = false;
+    function ease(k) { return k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2; }
+    function step(t) {
+      if (!t0) t0 = t;
+      var k = Math.min(1, (t - t0) / D);
+      var r = Math.max(0, ease(k) * maxR);
+      var m = 'radial-gradient(circle at ' + cx + 'px ' + cy + 'px, transparent ' + r.toFixed(1) + 'px, #000 ' + (r + 1.5).toFixed(1) + 'px)';
+      gate.style.webkitMaskImage = m;
+      gate.style.maskImage = m;
+      ring.style.width = ring.style.height = (2 * r).toFixed(1) + 'px';
+      ring.style.opacity = k < 0.8 ? 1 : Math.max(0, (1 - k) / 0.2);
+      if (k < 1) requestAnimationFrame(step);
+      else { ring.hidden = true; done(); }
+    }
+    requestAnimationFrame(step);
+  }
+
+  W.init({
+    text: {
+      uz: {
+        gateTitle: '<span>Sizga</span> <span>taklifnoma</span> <span>keldi</span>',
+        gateHint: 'Taklifnomani ochish uchun<br>qulfni bosing',
+        openAria: 'Taklifnomani ochish'
+      },
+      ru: {
+        gateTitle: '<span>Вам пришло</span> <span>приглашение</span>',
+        gateHint: 'Нажмите на замок,<br>чтобы открыть приглашение',
+        openAria: 'Открыть приглашение'
+      }
+    },
+    calMark: '<svg class="cal-heart" viewBox="0 0 64 58" aria-hidden="true"><path pathLength="1" d="M30 53C18 45 6 35 6 22 6 12 13 6 21 7c6 1 9 6 11 11 2-6 7-12 14-12 8 1 13 8 12 17-1 12-13 22-25 32"/></svg>',
+    onOpen: function (done) {
+      var gate = W.$('#gate');
+      var lock = W.$('.lock');
+      if (W.reduce) {
+        W.heroGo();
+        gate.classList.add('fade-out');
+        setTimeout(done, 700);
+        return;
+      }
+      var r = lock.getBoundingClientRect();
+      setTimeout(function () {
+        W.heroGo();
+        iris(r.left + r.width / 2, r.top + r.height / 2, done);
+      }, 560);
+    }
+  });
+
+  dust(W.$('#gateFx'), 16, 70);
+  dust(W.$('#heroFx'), 10, 56);
+
+  if (!W.reduce) {
+    var hero = W.$('#top'), heroIn = W.$('#heroIn');
+    W.onScroll(function (y) {
+      var h = hero.offsetHeight || 1;
+      var k = Math.min(1, y / (h * 0.75));
+      heroIn.style.opacity = String(1 - k * 0.95);
+      heroIn.style.transform = 'translate3d(0,' + (y * 0.3).toFixed(1) + 'px,0) scale(' + (1 - k * 0.05).toFixed(3) + ')';
+    });
+  }
+})();
+</script>
+</body>
+</html>
